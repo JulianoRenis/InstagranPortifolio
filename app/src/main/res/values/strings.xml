@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Instagran Portifólio</string>
+    <string name="email">E-mail</string>
+    <string name="enter">Entrar</string>
+    <string name="or">ou</string>
+    <string name="does_not_have_account">Não tem uma conta? <b><font color="#0000000">Cadastre-se</font></b></string>
+</resources>
