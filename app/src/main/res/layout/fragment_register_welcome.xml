@@ -22,43 +22,10 @@
             android:paddingVertical="70dp"
             tools:context=".login.view.LoginActivity">
 
+            <TextView
+                style="@style/Theme.InstagranPortifólio.TextViewBase.Form"
+                android:text="@string/welcome_to_instagram"/>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/register_edit_name_input"
-                style="@style/Theme.InstagranPortifólio.FormEditTextInput"
-                app:hintEnabled="false">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_name_email"
-                    style="@style/Theme.InstagranPortifólio.FormEditText"
-                    android:autofillHints="@null"
-                    android:hint="@string/name"
-                    android:inputType="textEmailAddress" />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/register_edit_email_password_input"
-                style="@style/Theme.InstagranPortifólio.FormEditTextInput"
-                app:hintEnabled="false">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_edit_password"
-                    style="@style/Theme.InstagranPortifólio.FormEditText"
-                    android:autofillHints="@null"
-                    android:hint="@string/password"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/register_edit_confirm_password_input"
-                style="@style/Theme.InstagranPortifólio.FormEditTextInput"
-                app:hintEnabled="false">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/register_edit_confirm_password"
-                    style="@style/Theme.InstagranPortifólio.FormEditText"
-                    android:autofillHints="@null"
-                    android:hint="@string/password_confirm"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.julianorenis.instagranportiflio.login.view.LoadingButton
