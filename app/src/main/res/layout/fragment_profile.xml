@@ -143,4 +143,12 @@
         android:layout_marginStart="16dp"
         />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_rv"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_nav_tabs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_profile_grid"
+        android:layout_height="0dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
