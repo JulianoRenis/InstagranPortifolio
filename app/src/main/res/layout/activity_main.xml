@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".main.view.MainActivity">
 
-    <fragment
-        android:id="@+id/main_fragment"
-        android:name="com.julianorenis.instagranportiflio.profile.view.Fragmentprofile"
-        tools:layout="@layout/fragment_profile"
-        app:layout_constraintBottom_toTopOf="@id/main_bottom_nav"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                app:title="@string/app_name"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <fragment
+            android:id="@+id/main_fragment"
+            android:name="com.julianorenis.instagranportiflio.profile.view.Fragmentprofile"
+            tools:layout="@layout/fragment_profile"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_nav"
@@ -28,4 +54,7 @@
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

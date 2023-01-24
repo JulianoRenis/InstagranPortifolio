@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:showIn="@layout/activity_main">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+   >
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_img_icon"
@@ -14,7 +22,7 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_insta_profile_thin"
         app:civ_border_color="@color/gray"
-        app:civ_border_width="1dp"
+        app:civ_border_width="0dp"
         app:civ_circle_background_color="@color/gray_border"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -149,6 +157,7 @@
         app:layout_constraintTop_toBottomOf="@id/profile_nav_tabs"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/item_profile_grid"
-        android:layout_height="0dp"/>
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
